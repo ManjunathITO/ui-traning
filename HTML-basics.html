@@ -7,7 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Basic HTML Elements</title>
+	
+	<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
 </head>
+
 
 <body>
     <h1>Headings in HTML</h1>
@@ -26,9 +50,7 @@
 
     <hr>
 
-    <!-- HTML Links -->
-    <a href="https://www.w3schools.com" title="Click link to Open w3schools">This is the Link for w3schools</a>
-    <hr>
+    
 
     <!-- Image Tag 
     src attribute can include links from external resources and images which belong to the same folder, external images may not be modified and can be removed. so we can provide an alternate text to display what the image actually about.
@@ -62,9 +84,59 @@
 
     <!-- Using pre Tag, the Browser maintains the Format or Structure of the Text Included inside the Tag-->
 
+	<!--Colors-->
+	<h1 style="background-color:DodgerBlue;">Hello World</h1> 
+	<h1 style="color:Tomato;">Hello World</h1> <!-- Text Color-->
+	<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+	<!-- value color -->
+	<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+	<h1 style="background-color:#ff6347;">...</h1>
+	<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+	
+	<!-- HTML Links -->
+    <a href="https://www.w3schools.com" title="Click link to Open w3schools">This is the Link for w3schools</a>
+    <hr>
+	
+	<h2>Absolute URLs</h2>
+	<p><a href="https://www.w3.org/">W3C</a></p>
+	<p><a href="https://www.google.com/">Google</a></p>
 
+	<h2>Relative URLs</h2>
+	<p><a href="html_images.asp">HTML Images</a></p>
+	<p><a href="/css/default.asp">CSS Tutorial</a></p>
+	
+	<h2>Image as a Link</h2>
+	<p>The image below is a link. Try to click on it.</p>
+	<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+	
+	<a href="manjunathvv199@gmail.com">Send email</a>
+	
+	<h2>Button as a Links</h2>
+	<p>Click the button to go to the HTML tutorial.</p>
+	<button onclick="document.location='default.asp'">HTML Tutorial</button>
+	
+	<!--Link Titles -->
+	<h2>Link Titles</h2>
+	<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
 
+	<!--Book Mark -->
+	<p><a href="#C4">Jump to Chapter 4</a></p>
+	<p><a href="#C1">Jump to Chapter 1</a></p>
 
+	<h2>Chapter 1</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 2</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 3</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2 id="C4">Chapter 4</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 5</h2>
+	<p>This chapter explains ba bla bla</p>
 
 
 
